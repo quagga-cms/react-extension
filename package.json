@@ -1,0 +1,25 @@
+{
+  "name": "@puleeno-cms/react",
+  "version": "1.0.0",
+  "description": "The React extension for Puleeno CMS",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puleeno-cms/react-extension.git"
+  },
+  "keywords": [
+    "based",
+    "layout",
+    "react",
+    "layout"
+  ],
+  "author": "Puleeno Nguyen <puleeno@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/puleeno-cms/react-extension/issues"
+  },
+  "homepage": "https://github.com/puleeno-cms/react-extension#readme"
+}
