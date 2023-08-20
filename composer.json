@@ -1,0 +1,23 @@
+{
+    "name": "puleeno-cms/react",
+    "description": "The React views for Puleeno CMS",
+    "autoload": {
+        "psr-4": {
+            "PuleenoCMS\\React\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "Puleeno Nguyen",
+            "email": "puleeno@gmail.com"
+        }
+    ],
+    "require": {},
+    "config": {
+        "vendor-dir": "libs"
+    },
+    "extension-class": "PuleenoCMS\\React\\ReactExtension",
+    "require-extensions": {
+        "puleeno-cms/layout": "*"
+    }
+}
