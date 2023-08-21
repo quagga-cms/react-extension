@@ -1,25 +1,33 @@
 {
-  "name": "@puleeno-cms/react",
   "version": "1.0.0",
-  "description": "The React extension for Puleeno CMS",
-  "main": "src/index.ts",
+  "description": "My webpack project",
+  "name": "my-webpack-project",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/puleeno-cms/react-extension.git"
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "css-loader": "^6.8.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "postcss": "^8.4.27",
+    "postcss-loader": "^7.3.3",
+    "prettier": "^3.0.1",
+    "sass": "^1.64.2",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "workbox-webpack-plugin": "^7.0.0"
   },
-  "keywords": [
-    "based",
-    "layout",
-    "react",
-    "layout"
-  ],
-  "author": "Puleeno Nguyen <puleeno@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/puleeno-cms/react-extension/issues"
-  },
-  "homepage": "https://github.com/puleeno-cms/react-extension#readme"
+  "dependencies": {
+    "react": "npm:@preact/compat",
+    "react-dom": "npm:@preact/compat"
+  }
 }
