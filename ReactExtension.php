@@ -27,12 +27,12 @@ class ReactExtension extends Extension implements FrontendExtensionConstract, Ba
                 AssetTypeEnum::JS(),
                 [],
                 '10.17.1',
-                AssetScriptOptions::parseOptionFromArray([]),
-                1
+                AssetScriptOptions::parseOptionFromArray([])
             );
         }
         return static::$react;
     }
+
 
     public function bootstrap()
     {
