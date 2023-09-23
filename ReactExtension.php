@@ -21,8 +21,8 @@ class ReactExtension extends Extension implements FrontendExtensionConstract, Ba
                 'react',
                 Helper::createExtensionAssetUrl(
                     $this->getExtensionDir(),
-                    'assets/vendors/preact.js',
-                    'assets/vendors/preact.min.js'
+                    'vendors/preact.umd.js',
+                    'vendors/preact.min.js'
                 ),
                 AssetTypeEnum::JS(),
                 [],
