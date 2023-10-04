@@ -8,12 +8,12 @@ declare global {
   }
 }
 
-class TwoSidebar extends BaseLayout {
+class OnlyContent extends BaseLayout {
   render(props?: Readonly<Attributes & { children?: ComponentChildren; ref?: Ref<any> | undefined; }> | undefined, state?: Readonly<{}> | undefined, context?: any): ComponentChild {
     return (
-        <div>TwoSidebar</div>
+        <div>OnlyContent</div>
     );
   }
 }
 
-export default TwoSidebar;
+export default OnlyContent;

@@ -8,12 +8,12 @@ declare global {
   }
 }
 
-class TwoSidebar extends BaseLayout {
+class FloatSidebar extends BaseLayout {
   render(props?: Readonly<Attributes & { children?: ComponentChildren; ref?: Ref<any> | undefined; }> | undefined, state?: Readonly<{}> | undefined, context?: any): ComponentChild {
     return (
-        <div>TwoSidebar</div>
+        <div>FloatSidebar</div>
     );
   }
 }
 
-export default TwoSidebar;
+export default FloatSidebar;

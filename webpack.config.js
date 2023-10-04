@@ -12,7 +12,9 @@ const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader
 
 
 const config = {
-    entry: './resources/src/index.ts',
+    entry: {
+        'puleenocms-react': './resources/src/index.ts'
+    },
     output: {
         path: path.resolve(__dirname, 'assets'),
     },
@@ -57,6 +59,10 @@ const config = {
         },
         extensions: ['.tsx', '.ts', '.jsx', '.js', '...'],
     },
+    externals: {
+        react: "react",
+        preact: "preact"
+    }
 };
 
 module.exports = () => {

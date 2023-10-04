@@ -1,6 +1,5 @@
-import React from 'preact/compat';
+import React, { PureComponent } from 'preact/compat';
 import { Attributes, ComponentChildren, Ref, ComponentChild } from 'preact';
-import BaseLayout from './BaseLayout';
 
 declare global {
   // tslint:disable-next-line: interface-name
@@ -8,12 +7,12 @@ declare global {
   }
 }
 
-class TwoSidebar extends BaseLayout {
+class BaseLayout extends PureComponent {
   render(props?: Readonly<Attributes & { children?: ComponentChildren; ref?: Ref<any> | undefined; }> | undefined, state?: Readonly<{}> | undefined, context?: any): ComponentChild {
     return (
-        <div>TwoSidebar</div>
+        <div>BaseLayout</div>
     );
   }
 }
 
-export default TwoSidebar;
+export default BaseLayout;
