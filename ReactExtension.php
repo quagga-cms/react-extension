@@ -17,12 +17,13 @@ use PuleenoCMS\Layout\TemplateManager;
 class ReactExtension extends Extension implements FrontendExtensionConstract, BackendExtensionConstract
 {
     protected static $react;
+    protected static $reactDOM;
     protected static $preact;
 
 
     const REACT_FRONTEND_TEMPLATE = 'app.twig';
 
-    public function getReactAsset($isPreact=false): AssetConstract {
+    public function getReactAsset($isPreact=true): AssetConstract {
         if ($isPreact) {
             if (is_null(static::$preact)) {
                 static::$preact = AssetManager::create(
@@ -55,6 +56,24 @@ class ReactExtension extends Extension implements FrontendExtensionConstract, Ba
             );
         }
         return static::$react;
+    }
+
+    public function getReactDOMAsset(): AssetConstract {
+        if (is_null(static::$reactDOM)) {
+            static::$reactDOM = AssetManager::create(
+                'react-dom',
+                Helper::createExtensionAssetUrl(
+                    $this->getExtensionDir(),
+                    'vendors/react-dom.development.js',
+                    'vendors/react-dom.development.min.js'
+                ),
+                AssetTypeEnum::JS(),
+                [],
+                '10.17.1',
+                AssetScriptOptions::parseOptionFromArray([])
+            );
+        }
+        return static::$reactDOM;
     }
 
 
