@@ -65,7 +65,7 @@ class ReactExtension extends Extension implements FrontendExtensionConstract, Ba
                 Helper::createExtensionAssetUrl(
                     $this->getExtensionDir(),
                     'vendors/react-dom.development.js',
-                    'vendors/react-dom.development.min.js'
+                    'vendors/react-dom.production.min.js'
                 ),
                 AssetTypeEnum::JS(),
                 [],
