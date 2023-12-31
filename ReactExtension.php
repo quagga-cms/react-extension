@@ -23,7 +23,7 @@ class ReactExtension extends Extension implements FrontendExtensionConstract, Ba
 
     const REACT_FRONTEND_TEMPLATE = 'app.twig';
 
-    public function getReactAsset($isPreact=true): AssetConstract {
+    public function getReactAsset($isPreact=false): AssetConstract {
         if ($isPreact) {
             if (is_null(static::$preact)) {
                 static::$preact = AssetManager::create(
