@@ -17,17 +17,36 @@ use PuleenoCMS\Layout\TemplateManager;
 class ReactExtension extends Extension implements FrontendExtensionConstract, BackendExtensionConstract
 {
     protected static $react;
+    protected static $preact;
+
 
     const REACT_FRONTEND_TEMPLATE = 'app.twig';
 
-    public function getReactAsset(): AssetConstract {
+    public function getReactAsset($isPreact=false): AssetConstract {
+        if ($isPreact) {
+            if (is_null(static::$preact)) {
+                static::$preact = AssetManager::create(
+                    'react',
+                    Helper::createExtensionAssetUrl(
+                        $this->getExtensionDir(),
+                        $isPreact ? 'vendors/preact.umd.js' : 'vendors/react.development.js',
+                        $isPreact ? 'vendors/preact.min.js' : 'vendors/react.production.min.js'
+                    ),
+                    AssetTypeEnum::JS(),
+                    [],
+                    '10.17.1',
+                    AssetScriptOptions::parseOptionFromArray([])
+                );
+            }
+            return static::$preact;
+        }
         if (is_null(static::$react)) {
             static::$react = AssetManager::create(
                 'react',
                 Helper::createExtensionAssetUrl(
                     $this->getExtensionDir(),
-                    'vendors/preact.umd.js',
-                    'vendors/preact.min.js'
+                    $isPreact ? 'vendors/preact.umd.js' : 'vendors/react.development.js',
+                    $isPreact ? 'vendors/preact.min.js' : 'vendors/react.production.min.js'
                 ),
                 AssetTypeEnum::JS(),
                 [],
