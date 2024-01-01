@@ -90,6 +90,13 @@ class ReactExtension extends Extension implements FrontendExtensionConstract, Ba
             HookManager::addFilter('home_template', function($template){
                 return static::REACT_FRONTEND_TEMPLATE;
             });
+
+            HookManager::addFilter('global_controller_response', function($repsonse, $request){
+                return view(
+                    HookManager::applyFilters('home_template', 'pages/home'),
+                    HookManager::applyFilters('home_data', [])
+                );
+            }, 10, 2);
         }
     }
 }
