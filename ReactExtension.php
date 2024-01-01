@@ -51,7 +51,7 @@ class ReactExtension extends Extension implements FrontendExtensionConstract, Ba
                 ),
                 AssetTypeEnum::JS(),
                 [],
-                '10.17.1',
+                '18.2.0',
                 AssetScriptOptions::parseOptionFromArray([])
             );
         }
@@ -69,7 +69,7 @@ class ReactExtension extends Extension implements FrontendExtensionConstract, Ba
                 ),
                 AssetTypeEnum::JS(),
                 [],
-                '10.17.1',
+                '18.2.0',
                 AssetScriptOptions::parseOptionFromArray([])
             );
         }
