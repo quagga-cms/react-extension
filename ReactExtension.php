@@ -1,6 +1,6 @@
 <?php
 
-namespace PuleenoCMS\React;
+namespace Jackal\Extension\React;
 
 use App\Constracts\Assets\AssetConstract;
 use App\Constracts\AssetTypeEnum;
@@ -12,7 +12,7 @@ use App\Core\Env;
 use App\Core\Extension;
 use App\Core\Helper;
 use App\Core\HookManager;
-use PuleenoCMS\Layout\TemplateManager;
+use Jackal\Extension\Layout\TemplateManager;
 
 class ReactExtension extends Extension implements FrontendExtensionConstract, BackendExtensionConstract
 {

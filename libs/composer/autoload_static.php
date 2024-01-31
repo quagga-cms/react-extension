@@ -7,14 +7,14 @@ namespace Composer\Autoload;
 class ComposerStaticInit7460a584b27887d0efcda6b935460699
 {
     public static $prefixLengthsPsr4 = array (
-        'P' =>
+        'J' => 
         array (
-            'PuleenoCMS\\React\\' => 17,
+            'Jackal\\Extension\\React\\' => 23,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'PuleenoCMS\\React\\' =>
+        'Jackal\\Extension\\React\\' => 
         array (
             0 => __DIR__ . '/../..' . '/',
         ),
@@ -30,6 +30,7 @@ class ComposerStaticInit7460a584b27887d0efcda6b935460699
             $loader->prefixLengthsPsr4 = ComposerStaticInit7460a584b27887d0efcda6b935460699::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit7460a584b27887d0efcda6b935460699::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInit7460a584b27887d0efcda6b935460699::$classMap;
+
         }, null, ClassLoader::class);
     }
 }

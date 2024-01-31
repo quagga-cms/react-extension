@@ -1,2 +1,2 @@
 # react-extension
-The React extension for Puleeno CMS
+The React extension for Jackal CMS

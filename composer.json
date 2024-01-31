@@ -1,9 +1,9 @@
 {
-    "name": "puleeno-cms/react",
-    "description": "The React views for Puleeno CMS",
+    "name": "jackal-cms/react",
+    "description": "The React views for Jackal CMS",
     "autoload": {
         "psr-4": {
-            "PuleenoCMS\\React\\": "./"
+            "Jackal\\Extension\\React\\": "./"
         }
     },
     "authors": [
@@ -16,8 +16,8 @@
     "config": {
         "vendor-dir": "libs"
     },
-    "extension-class": "PuleenoCMS\\React\\ReactExtension",
+    "extension-class": "Jackal\\Extension\\React\\ReactExtension",
     "require-extensions": {
-        "puleeno-cms/layout": "*"
+        "jackal-cms/layout": "*"
     }
 }
