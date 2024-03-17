@@ -6,12 +6,12 @@ use App\Constracts\Assets\AssetConstract;
 use App\Constracts\AssetTypeEnum;
 use App\Constracts\BackendExtensionConstract;
 use App\Constracts\FrontendExtensionConstract;
-use App\Core\AssetManager;
-use App\Core\Assets\AssetScriptOptions;
-use App\Core\Env;
-use App\Core\Extension;
-use App\Core\Helper;
-use App\Core\HookManager;
+use Jackal\Jackal\AssetManager;
+use Jackal\Jackal\Assets\AssetScriptOptions;
+use Jackal\Jackal\Env;
+use Jackal\Jackal\Extension;
+use Jackal\Jackal\Helper;
+use Jackal\Jackal\HookManager;
 use Jackal\Extension\Layout\TemplateManager;
 
 class ReactExtension extends Extension implements FrontendExtensionConstract, BackendExtensionConstract
