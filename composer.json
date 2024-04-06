@@ -1,5 +1,5 @@
 {
-    "name": "quagga-cms/react",
+    "name": "quagga/react",
     "description": "The React views for Quagga CMS",
     "autoload": {
         "psr-4": {
@@ -18,6 +18,6 @@
     },
     "extension-class": "Quagga\\Extension\\React\\ReactExtension",
     "require-extensions": {
-        "quagga-cms/layout": "*"
+        "quagga/layout": "*"
     }
 }

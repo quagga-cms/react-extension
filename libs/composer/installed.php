@@ -8,11 +8,11 @@ return array(
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'reference' => 'e3ff4adf31bc5ea8c5547d9219b79d1e7e941f13',
-        'name' => 'quagga-cms/react',
+        'name' => 'quagga/react',
         'dev' => true,
     ),
     'versions' => array(
-        'quagga-cms/react' => array(
+        'quagga/react' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
             'type' => 'library',
