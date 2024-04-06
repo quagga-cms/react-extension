@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Jackal\\Extension\\React\\' => array($baseDir . '/'),
+    'Quagga\\Extension\\React\\' => array($baseDir . '/'),
 );

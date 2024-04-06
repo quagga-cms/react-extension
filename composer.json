@@ -1,9 +1,9 @@
 {
-    "name": "jackal-cms/react",
-    "description": "The React views for Jackal CMS",
+    "name": "quagga-cms/react",
+    "description": "The React views for Quagga CMS",
     "autoload": {
         "psr-4": {
-            "Jackal\\Extension\\React\\": "./"
+            "Quagga\\Extension\\React\\": "./"
         }
     },
     "authors": [
@@ -16,8 +16,8 @@
     "config": {
         "vendor-dir": "libs"
     },
-    "extension-class": "Jackal\\Extension\\React\\ReactExtension",
+    "extension-class": "Quagga\\Extension\\React\\ReactExtension",
     "require-extensions": {
-        "jackal-cms/layout": "*"
+        "quagga-cms/layout": "*"
     }
 }

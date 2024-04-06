@@ -13,7 +13,7 @@ const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader
 
 const config = {
     entry: {
-        'jackalcms-react': './resources/src/index.ts'
+        'quaggacms-react': './resources/src/index.ts'
     },
     output: {
         path: path.resolve(__dirname, 'assets'),

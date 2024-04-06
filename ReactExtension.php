@@ -1,18 +1,18 @@
 <?php
 
-namespace Jackal\Extension\React;
+namespace Quagga\Extension\React;
 
 use App\Constracts\Assets\AssetConstract;
 use App\Constracts\AssetTypeEnum;
 use App\Constracts\BackendExtensionConstract;
 use App\Constracts\FrontendExtensionConstract;
-use Jackal\Jackal\AssetManager;
-use Jackal\Jackal\Assets\AssetScriptOptions;
-use Jackal\Jackal\Env;
-use Jackal\Jackal\Extension;
-use Jackal\Jackal\Helper;
-use Jackal\Jackal\HookManager;
-use Jackal\Extension\Layout\TemplateManager;
+use Quagga\Quagga\AssetManager;
+use Quagga\Quagga\Assets\AssetScriptOptions;
+use Quagga\Quagga\Env;
+use Quagga\Quagga\Extension;
+use Quagga\Quagga\Helper;
+use Quagga\Quagga\HookManager;
+use Quagga\Extension\Layout\TemplateManager;
 
 class ReactExtension extends Extension implements FrontendExtensionConstract, BackendExtensionConstract
 {
