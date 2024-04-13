@@ -21,7 +21,7 @@ class ComposerStaticInit7460a584b27887d0efcda6b935460699
         ),
         'Quagga\\Constracts\\' => 
         array (
-            0 => __DIR__ . '/..' . '/quagga/constracts/src',
+            0 => __DIR__ . '/..' . '/quagga/contracts/src',
         ),
     );
 
