@@ -12,9 +12,6 @@
             "email": "puleeno@gmail.com"
         }
     ],
-    "require": {
-        "quagga/contracts": "dev-master"
-    },
     "config": {
         "vendor-dir": "libs"
     },
