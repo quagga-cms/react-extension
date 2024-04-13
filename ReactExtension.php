@@ -2,10 +2,10 @@
 
 namespace Quagga\Extension\React;
 
-use Quagga\Quagga\Constracts\Assets\AssetConstract;
-use Quagga\Quagga\Constracts\AssetTypeEnum;
-use Quagga\Quagga\Constracts\BackendExtensionConstract;
-use Quagga\Quagga\Constracts\FrontendExtensionConstract;
+use Quagga\Constracts\Assets\AssetConstract;
+use Quagga\Constracts\AssetTypeEnum;
+use Quagga\Constracts\BackendExtensionConstract;
+use Quagga\Constracts\FrontendExtensionConstract;
 use Quagga\Quagga\AssetManager;
 use Quagga\Quagga\Assets\AssetScriptOptions;
 use Quagga\Quagga\Env;

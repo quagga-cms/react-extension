@@ -10,6 +10,7 @@ class ComposerStaticInit7460a584b27887d0efcda6b935460699
         'Q' => 
         array (
             'Quagga\\Extension\\React\\' => 23,
+            'Quagga\\Constracts\\' => 18,
         ),
     );
 
@@ -17,6 +18,10 @@ class ComposerStaticInit7460a584b27887d0efcda6b935460699
         'Quagga\\Extension\\React\\' => 
         array (
             0 => __DIR__ . '/../..' . '/',
+        ),
+        'Quagga\\Constracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/quagga/constracts/src',
         ),
     );
 
