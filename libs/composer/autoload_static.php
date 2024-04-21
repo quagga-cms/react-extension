@@ -4,13 +4,12 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit7460a584b27887d0efcda6b935460699
+class ComposerStaticInit641a766a936283e339ec019c8b3d6021
 {
     public static $prefixLengthsPsr4 = array (
         'Q' => 
         array (
             'Quagga\\Extension\\React\\' => 23,
-            'Quagga\\Constracts\\' => 18,
         ),
     );
 
@@ -18,10 +17,6 @@ class ComposerStaticInit7460a584b27887d0efcda6b935460699
         'Quagga\\Extension\\React\\' => 
         array (
             0 => __DIR__ . '/../..' . '/',
-        ),
-        'Quagga\\Constracts\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/quagga/contracts/src',
         ),
     );
 
@@ -32,9 +27,9 @@ class ComposerStaticInit7460a584b27887d0efcda6b935460699
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit7460a584b27887d0efcda6b935460699::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit7460a584b27887d0efcda6b935460699::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit7460a584b27887d0efcda6b935460699::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit641a766a936283e339ec019c8b3d6021::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit641a766a936283e339ec019c8b3d6021::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit641a766a936283e339ec019c8b3d6021::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -7,5 +7,4 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Quagga\\Extension\\React\\' => array($baseDir . '/'),
-    'Quagga\\Constracts\\' => array($vendorDir . '/quagga/contracts/src'),
 );
